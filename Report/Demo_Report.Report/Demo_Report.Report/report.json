@@ -1,5 +1,5 @@
 {
-  "config": "{\"version\":\"5.59\",\"themeCollection\":{\"baseTheme\":{\"name\":\"CY24SU10\",\"type\":2,\"version\":\"5.59\"}},\"activeSectionIndex\":0,\"defaultDrillFilterOtherVisuals\":true,\"settings\":{\"useNewFilterPaneExperience\":true,\"allowChangeFilterTypes\":true,\"useStylableVisualContainerHeader\":true,\"queryLimitOption\":6,\"exportDataMode\":1,\"useDefaultAggregateDisplayName\":true},\"objects\":{\"section\":[{\"properties\":{\"verticalAlignment\":{\"expr\":{\"Literal\":{\"Value\":\"'Top'\"}}}}}],\"outspacePane\":[{\"properties\":{\"expanded\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}",
+  "config": "{\"version\":\"5.59\",\"themeCollection\":{\"baseTheme\":{\"name\":\"CY24SU10\",\"type\":2,\"version\":\"5.59\"}},\"activeSectionIndex\":0,\"modelExtensions\":[{\"name\":\"extension\",\"entities\":[{\"name\":\"Sample_Table_Sales\",\"extends\":\"Sample_Table_Sales\",\"measures\":[{\"name\":\"Total Revenue\",\"dataType\":3,\"expression\":\"sum(Sample_Table_Sales[Revenue])\",\"errorMessage\":null,\"hidden\":false,\"formulaOverride\":null,\"formatInformation\":{\"formatString\":\"G\",\"format\":\"General\",\"thousandSeparator\":false,\"currencyFormat\":null,\"dateTimeCustomFormat\":null}}]}]}],\"defaultDrillFilterOtherVisuals\":true,\"settings\":{\"useNewFilterPaneExperience\":true,\"allowChangeFilterTypes\":true,\"useStylableVisualContainerHeader\":true,\"queryLimitOption\":6,\"exportDataMode\":1,\"useDefaultAggregateDisplayName\":true},\"objects\":{\"section\":[{\"properties\":{\"verticalAlignment\":{\"expr\":{\"Literal\":{\"Value\":\"'Top'\"}}}}}],\"outspacePane\":[{\"properties\":{\"expanded\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}",
   "layoutOptimization": 0,
   "resourcePackages": [
     {
@@ -36,12 +36,21 @@
           "z": 0.00
         },
         {
-          "config": "{\"name\":\"b67f7af16d32cd75e100\",\"layouts\":[{\"id\":0,\"position\":{\"x\":10.666666666666666,\"y\":394.6666666666667,\"z\":2,\"width\":1269.3333333333333,\"height\":326.0952380952381,\"tabOrder\":2}}],\"singleVisual\":{\"visualType\":\"treemap\",\"projections\":{\"Group\":[{\"queryRef\":\"Sample_Table_Product.Supplier\",\"active\":true}],\"Details\":[{\"queryRef\":\"Sample_Table_Sales.Region\"}],\"Values\":[{\"queryRef\":\"Sum(Sample_Table_Sales.Revenue)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"s\",\"Entity\":\"Sample_Table_Product\",\"Type\":0},{\"Name\":\"s1\",\"Entity\":\"Sample_Table_Sales\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"Supplier\"},\"Name\":\"Sample_Table_Product.Supplier\",\"NativeReferenceName\":\"Supplier\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s1\"}},\"Property\":\"Region\"},\"Name\":\"Sample_Table_Sales.Region\",\"NativeReferenceName\":\"Region\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s1\"}},\"Property\":\"Revenue\"}},\"Function\":0},\"Name\":\"Sum(Sample_Table_Sales.Revenue)\",\"NativeReferenceName\":\"Sum of Revenue\"}]},\"drillFilterOtherVisuals\":true}}",
+          "config": "{\"name\":\"9ad4fc4f606b80820487\",\"layouts\":[{\"id\":0,\"position\":{\"x\":672,\"y\":395,\"width\":608,\"height\":325,\"z\":3,\"tabOrder\":3}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"Sample_Table_Sales.Total Revenue\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"s\",\"Entity\":\"Sample_Table_Sales\",\"Schema\":\"extension\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"Total Revenue\"},\"Name\":\"Sample_Table_Sales.Total Revenue\",\"NativeReferenceName\":\"Total Revenue\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"Total Revenue\"}}}]},\"columnProperties\":{\"Sample_Table_Sales.Total Revenue\":{\"formatString\":\"0.00\"}},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
           "filters": "[]",
-          "height": 326.10,
-          "width": 1269.33,
-          "x": 10.67,
-          "y": 394.67,
+          "height": 325.00,
+          "width": 608.00,
+          "x": 672.00,
+          "y": 395.00,
+          "z": 3.00
+        },
+        {
+          "config": "{\"name\":\"b67f7af16d32cd75e100\",\"layouts\":[{\"id\":0,\"position\":{\"x\":11.220779220779221,\"y\":395.2207792207792,\"z\":2,\"width\":660.7792207792207,\"height\":325.4025974025974,\"tabOrder\":2}}],\"singleVisual\":{\"visualType\":\"treemap\",\"projections\":{\"Group\":[{\"queryRef\":\"Sample_Table_Product.Supplier\",\"active\":true}],\"Details\":[{\"queryRef\":\"Sample_Table_Sales.Region\"}],\"Values\":[{\"queryRef\":\"Sum(Sample_Table_Sales.Revenue)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"s\",\"Entity\":\"Sample_Table_Product\",\"Type\":0},{\"Name\":\"s1\",\"Entity\":\"Sample_Table_Sales\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"Supplier\"},\"Name\":\"Sample_Table_Product.Supplier\",\"NativeReferenceName\":\"Supplier\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s1\"}},\"Property\":\"Region\"},\"Name\":\"Sample_Table_Sales.Region\",\"NativeReferenceName\":\"Region\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s1\"}},\"Property\":\"Revenue\"}},\"Function\":0},\"Name\":\"Sum(Sample_Table_Sales.Revenue)\",\"NativeReferenceName\":\"Sum of Revenue\"}]},\"drillFilterOtherVisuals\":true}}",
+          "filters": "[]",
+          "height": 325.40,
+          "width": 660.78,
+          "x": 11.22,
+          "y": 395.22,
           "z": 2.00
         },
         {
