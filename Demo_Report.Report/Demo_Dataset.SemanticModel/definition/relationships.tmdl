@@ -1,9 +1,0 @@
-relationship 102720ec-3478-497d-a1f5-e21323b3a83e
-	joinOnDateBehavior: datePartOnly
-	fromColumn: Sample_Table_Sales.Date
-	toColumn: LocalDateTable_ffbda448-3aa2-4912-b1cb-bb6c32be2b4b.Date
-
-relationship AutoDetected_8821fe80-4ef7-445a-bf65-4a60e66275d7
-	fromColumn: Sample_Table_Sales.'Product ID'
-	toColumn: Sample_Table_Product.'Product ID'
-
